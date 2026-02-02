@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.apm.LongPressDemo">
+      <class name="com.apm.SeekBarDemo">
         <methods>
-          <include name="lp"/>
           <include name="base"/>
           <include name="close"/>
+          <include name="sb"/>
         </methods>
-      </class> <!-- com.apm.LongPressDemo -->
+      </class> <!-- com.apm.SeekBarDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

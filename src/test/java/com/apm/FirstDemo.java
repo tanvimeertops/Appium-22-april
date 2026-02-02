@@ -1,5 +1,6 @@
 package com.apm;
 
+import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
@@ -22,11 +23,31 @@ import com.google.common.collect.ImmutableMap;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
+import io.appium.java_client.service.local.AppiumDriverLocalService;
+import io.appium.java_client.service.local.AppiumServiceBuilder;
 
 public class FirstDemo {
 	AndroidDriver driver;
+	AppiumDriverLocalService builder;
 	@BeforeClass
 	public void base() throws MalformedURLException, InterruptedException {
+		
+		builder=new AppiumServiceBuilder()
+						.withAppiumJS(
+						new File("C:\\Users\\Tops\\AppData\\"
+								+ "Roaming\\npm\\node_modules\\appium"
+								+ "\\build\\lib\\main.js"))
+						.withIPAddress("127.0.0.1")
+						.usingPort(4723)
+						.build();
+				builder.start();
+
+				
+				
+				
+				
+				
+				
 		UiAutomator2Options options=new UiAutomator2Options();
 		options.setDeviceName("tanvi");
 		options.setApp("D:\\Selenium\\apk file\\ApiDemos-debug.apk");
@@ -72,6 +93,7 @@ public class FirstDemo {
 	@AfterClass
 	public void close() {
 		driver.quit();
+		builder.stop();
 	}
 	
 }

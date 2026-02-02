@@ -9,10 +9,242 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">31,623</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">21,681</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.apm.SeekBarDemo</td><td><a href="#m0">sb</a></td><td rowspan="1">1769142352890</td><td rowspan="1">16275</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.apm.SeekBarDemo</td><td><a href="#m0">base</a></td><td rowspan="1">1769493022824</td><td rowspan="1">21440</td></tr><tr><th colspan="4">Default test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">com.apm.SeekBarDemo</td><td><a href="#m1">close</a></td><td rowspan="1">1769493044363</td><td rowspan="1">0</td></tr><tr><th colspan="4">Default test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.apm.SeekBarDemo</td><td><a href="#m2">sb</a></td><td rowspan="1">1769493044353</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.apm.SeekBarDemo#sb</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">com.apm.SeekBarDemo#base</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: [The local appium server has not been started, Reason: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20015 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: C:\Program Files\nodejs\node.exe, Arguments: [C:\Users\Tops\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 127.0.0.1], Output: dbug Appium Parsed manifest file at C:\Users\Tops\.appium\node_modules\.cache\appium\extensions.yaml: {
+dbug Appium   &quot;drivers&quot;: {
+dbug Appium     &quot;uiautomator2&quot;: {
+dbug Appium       &quot;pkgName&quot;: &quot;appium-uiautomator2-driver&quot;,
+dbug Appium       &quot;version&quot;: &quot;4.2.9&quot;,
+dbug Appium       &quot;installType&quot;: &quot;npm&quot;,
+dbug Appium       &quot;installSpec&quot;: &quot;uiautomator2&quot;,
+dbug Appium       &quot;installPath&quot;: &quot;C:\\Users\\Tops\\.appium\\node_modules\\appium-uiautomator2-driver&quot;,
+dbug Appium       &quot;appiumVersion&quot;: &quot;^2.4.1 || ^3.0.0-beta.0&quot;,
+dbug Appium       &quot;automationName&quot;: &quot;UiAutomator2&quot;,
+dbug Appium       &quot;platformNames&quot;: [
+dbug Appium         &quot;Android&quot;
+dbug Appium       ],
+dbug Appium       &quot;mainClass&quot;: &quot;AndroidUiautomator2Driver&quot;,
+dbug Appium       &quot;scripts&quot;: {
+dbug Appium         &quot;reset&quot;: &quot;scripts/reset.js&quot;
+dbug Appium       },
+dbug Appium       &quot;doctor&quot;: {
+dbug Appium         &quot;checks&quot;: [
+dbug Appium           &quot;./build/lib/doctor/required-checks.js&quot;,
+dbug Appium           &quot;./build/lib/doctor/optional-checks.js&quot;
+dbug Appium         ]
+dbug Appium       }
+dbug Appium     },
+dbug Appium     &quot;xcuitest&quot;: {
+dbug Appium       &quot;pkgName&quot;: &quot;appium-xcuitest-driver&quot;,
+dbug Appium       &quot;version&quot;: &quot;9.10.5&quot;,
+dbug Appium       &quot;installType&quot;: &quot;npm&quot;,
+dbug Appium       &quot;installSpec&quot;: &quot;xcuitest&quot;,
+dbug Appium       &quot;installPath&quot;: &quot;C:\\Users\\Tops\\.appium\\node_modules\\appium-xcuitest-driver&quot;,
+dbug Appium       &quot;appiumVersion&quot;: &quot;^2.5.4&quot;,
+dbug Appium       &quot;automationName&quot;: &quot;XCUITest&quot;,
+dbug Appium       &quot;platformNames&quot;: [
+dbug Appium         &quot;iOS&quot;,
+dbug Appium         &quot;tvOS&quot;
+dbug Appium       ],
+dbug Appium       &quot;mainClass&quot;: &quot;XCUITestDriver&quot;,
+dbug Appium       &quot;scripts&quot;: {
+dbug Appium         &quot;build-wda&quot;: &quot;./scripts/build-wda.js&quot;,
+dbug Appium         &quot;open-wda&quot;: &quot;./scripts/open-wda.js&quot;,
+dbug Appium         &quot;tunnel-creation&quot;: &quot;./scripts/tunnel-creation.mjs&quot;,
+dbug Appium         &quot;download-wda-sim&quot;: &quot;./scripts/download-wda-sim.mjs&quot;
+dbug Appium       },
+dbug Appium       &quot;schema&quot;: {
+dbug Appium         &quot;$schema&quot;: &quot;http://json-schema.org/draft-07/schema&quot;,
+dbug Appium         &quot;type&quot;: &quot;object&quot;,
+dbug Appium         &quot;properties&quot;: {
+dbug Appium           &quot;webdriveragent-port&quot;: {
+dbug Appium             &quot;appiumCliDest&quot;: &quot;wdaLocalPort&quot;,
+dbug Appium             &quot;default&quot;: 8100,
+dbug Appium             &quot;description&quot;: &quot;Local port used for communication with WebDriverAgent&quot;,
+dbug Appium             &quot;maximum&quot;: 65535,
+dbug Appium             &quot;minimum&quot;: 1,
+dbug Appium             &quot;type&quot;: &quot;integer&quot;
+dbug Appium           }
+dbug Appium         },
+dbug Appium         &quot;additionalProperties&quot;: false,
+dbug Appium         &quot;title&quot;: &quot;XCUITest Driver Configuration&quot;,
+dbug Appium         &quot;description&quot;: &quot;Appium configuration schema for the XCUITest driver.&quot;,
+dbug Appium         &quot;$id&quot;: &quot;driver-xcuitest.json&quot;
+dbug Appium       },
+dbug Appium       &quot;doctor&quot;: {
+dbug Appium         &quot;checks&quot;: [
+dbug Appium           &quot;./build/lib/doctor/required-checks.js&quot;,
+dbug Appium           &quot;./build/lib/doctor/optional-checks.js&quot;
+dbug Appium         ]
+dbug Appium       }
+dbug Appium     }
+dbug Appium   },
+dbug Appium   &quot;plugins&quot;: {},
+dbug Appium   &quot;schemaRev&quot;: 4
+dbug Appium }
+info Appium Welcome to Appium v2.5.4
+info Appium Non-default server args:
+info Appium { address: [32m&apos;127.0.0.1&apos;[39m }
+dbug Appium The autodetected Appium home path: C:\Users\Tops\.appium
+info Appium Attempting to load driver uiautomator2...
+info Appium Attempting to load driver xcuitest...
+dbug Appium Requiring driver at C:\Users\Tops\.appium\node_modules\appium-uiautomator2-driver\build\index.js
+]
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:203)
+	at com.apm.FirstDemo.base(FirstDemo.java:43)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20015 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:94)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:157)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:182)
+	... 25 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:91)
+	... 27 more
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.apm.SeekBarDemo#close</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.apm.SeekBarDemo#sb</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: [The local appium server has not been started, Reason: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20015 ms, Consider increasing the server startup timeout value (currently 20000ms), Node.js executable path: C:\Program Files\nodejs\node.exe, Arguments: [C:\Users\Tops\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 127.0.0.1], Output: dbug Appium Parsed manifest file at C:\Users\Tops\.appium\node_modules\.cache\appium\extensions.yaml: {
+dbug Appium   &quot;drivers&quot;: {
+dbug Appium     &quot;uiautomator2&quot;: {
+dbug Appium       &quot;pkgName&quot;: &quot;appium-uiautomator2-driver&quot;,
+dbug Appium       &quot;version&quot;: &quot;4.2.9&quot;,
+dbug Appium       &quot;installType&quot;: &quot;npm&quot;,
+dbug Appium       &quot;installSpec&quot;: &quot;uiautomator2&quot;,
+dbug Appium       &quot;installPath&quot;: &quot;C:\\Users\\Tops\\.appium\\node_modules\\appium-uiautomator2-driver&quot;,
+dbug Appium       &quot;appiumVersion&quot;: &quot;^2.4.1 || ^3.0.0-beta.0&quot;,
+dbug Appium       &quot;automationName&quot;: &quot;UiAutomator2&quot;,
+dbug Appium       &quot;platformNames&quot;: [
+dbug Appium         &quot;Android&quot;
+dbug Appium       ],
+dbug Appium       &quot;mainClass&quot;: &quot;AndroidUiautomator2Driver&quot;,
+dbug Appium       &quot;scripts&quot;: {
+dbug Appium         &quot;reset&quot;: &quot;scripts/reset.js&quot;
+dbug Appium       },
+dbug Appium       &quot;doctor&quot;: {
+dbug Appium         &quot;checks&quot;: [
+dbug Appium           &quot;./build/lib/doctor/required-checks.js&quot;,
+dbug Appium           &quot;./build/lib/doctor/optional-checks.js&quot;
+dbug Appium         ]
+dbug Appium       }
+dbug Appium     },
+dbug Appium     &quot;xcuitest&quot;: {
+dbug Appium       &quot;pkgName&quot;: &quot;appium-xcuitest-driver&quot;,
+dbug Appium       &quot;version&quot;: &quot;9.10.5&quot;,
+dbug Appium       &quot;installType&quot;: &quot;npm&quot;,
+dbug Appium       &quot;installSpec&quot;: &quot;xcuitest&quot;,
+dbug Appium       &quot;installPath&quot;: &quot;C:\\Users\\Tops\\.appium\\node_modules\\appium-xcuitest-driver&quot;,
+dbug Appium       &quot;appiumVersion&quot;: &quot;^2.5.4&quot;,
+dbug Appium       &quot;automationName&quot;: &quot;XCUITest&quot;,
+dbug Appium       &quot;platformNames&quot;: [
+dbug Appium         &quot;iOS&quot;,
+dbug Appium         &quot;tvOS&quot;
+dbug Appium       ],
+dbug Appium       &quot;mainClass&quot;: &quot;XCUITestDriver&quot;,
+dbug Appium       &quot;scripts&quot;: {
+dbug Appium         &quot;build-wda&quot;: &quot;./scripts/build-wda.js&quot;,
+dbug Appium         &quot;open-wda&quot;: &quot;./scripts/open-wda.js&quot;,
+dbug Appium         &quot;tunnel-creation&quot;: &quot;./scripts/tunnel-creation.mjs&quot;,
+dbug Appium         &quot;download-wda-sim&quot;: &quot;./scripts/download-wda-sim.mjs&quot;
+dbug Appium       },
+dbug Appium       &quot;schema&quot;: {
+dbug Appium         &quot;$schema&quot;: &quot;http://json-schema.org/draft-07/schema&quot;,
+dbug Appium         &quot;type&quot;: &quot;object&quot;,
+dbug Appium         &quot;properties&quot;: {
+dbug Appium           &quot;webdriveragent-port&quot;: {
+dbug Appium             &quot;appiumCliDest&quot;: &quot;wdaLocalPort&quot;,
+dbug Appium             &quot;default&quot;: 8100,
+dbug Appium             &quot;description&quot;: &quot;Local port used for communication with WebDriverAgent&quot;,
+dbug Appium             &quot;maximum&quot;: 65535,
+dbug Appium             &quot;minimum&quot;: 1,
+dbug Appium             &quot;type&quot;: &quot;integer&quot;
+dbug Appium           }
+dbug Appium         },
+dbug Appium         &quot;additionalProperties&quot;: false,
+dbug Appium         &quot;title&quot;: &quot;XCUITest Driver Configuration&quot;,
+dbug Appium         &quot;description&quot;: &quot;Appium configuration schema for the XCUITest driver.&quot;,
+dbug Appium         &quot;$id&quot;: &quot;driver-xcuitest.json&quot;
+dbug Appium       },
+dbug Appium       &quot;doctor&quot;: {
+dbug Appium         &quot;checks&quot;: [
+dbug Appium           &quot;./build/lib/doctor/required-checks.js&quot;,
+dbug Appium           &quot;./build/lib/doctor/optional-checks.js&quot;
+dbug Appium         ]
+dbug Appium       }
+dbug Appium     }
+dbug Appium   },
+dbug Appium   &quot;plugins&quot;: {},
+dbug Appium   &quot;schemaRev&quot;: 4
+dbug Appium }
+info Appium Welcome to Appium v2.5.4
+info Appium Non-default server args:
+info Appium { address: [32m&apos;127.0.0.1&apos;[39m }
+dbug Appium The autodetected Appium home path: C:\Users\Tops\.appium
+info Appium Attempting to load driver uiautomator2...
+info Appium Attempting to load driver xcuitest...
+dbug Appium Requiring driver at C:\Users\Tops\.appium\node_modules\appium-uiautomator2-driver\build\index.js
+]
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:203)
+	at com.apm.FirstDemo.base(FirstDemo.java:43)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20015 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:94)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:157)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:182)
+	... 25 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:91)
+	... 27 more
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
